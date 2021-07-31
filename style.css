@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:ital,wght@1,400;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header Section */
+
+header {
+  width: auto;
+  height: auto;
+  background-color: rgb(16, 16, 17);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  left: 0;
+  top: 0;
+  border: 2px solid violet;
+  z-index: 5;
+  
+}
+header nav ul li {
+  list-style: none;
+  font-size: 34px;
+  padding: 38px 26px;
+  font-family: "Open Sans", sans-serif;
+}
+nav ul {
+  display: flex;
+}
+header nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(221, 199, 199);
+}
+header nav ul li a:hover {
+  background-color:rgb(236, 17, 17);
+  border-radius: 10px;
+  z-index: 20;
+  
+}
+#logo {
+  margin: 35px 300px;
+  font-size: 39px;
+  font-family: "Open Sans", sans-serif;
+}
+span {
+  color: red;
+}
+
+/* Container section */
+#container {
+  width: 100%;
+  height: 2000px;
+  
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+#container::before {
+  content: "";
+  background: url("img1.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  width: 100%;
+  height: 2127px;
+  
+  z-index: -1;
+  opacity: 0.6;
+}
+
+#first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#first h1,
+p {
+  color: rgb(232, 248, 247);
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+}
+#first h1:hover,
+p:hover,.btn button:hover{
+  background-color: turquoise;
+  color: white;
+  text-transform: bold;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 2px;
+}
+.btn button {
+  width: 91px;
+  height: 32px;
+  border: 2px solid aqua;
+}
+
+/* Container1 Section */
+
+#container1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 650px;
+  position: relative;
+
+  
+  font-family: "Open Sans", sans-serif;
+}
+#container1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+  left: 0;
+  width: 100%;
+  height: 650px;
+  background: url("img7.webp") no-repeat center center/cover;
+  z-index: 1;
+  opacity: 0.4;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+}
+.box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid brown;
+  padding: 14px 37px;
+  border-radius: 28px;
+  margin: 20px 31px;
+}
+.box1 img {
+  height: 213px;
+  width: 270px;
+  padding: 20px;
+}
+#container1 h1{
+    color: rgb(7, 0, 0);
+    font-size: 39px;
+    text-transform: uppercase;
+
+}
+.box1 h2{
+    color: red;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.box1 button{
+    width: 95px ;
+    height: 36px;
+    border: 2px solid red;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+
+/* Container2 Section */
+
+#container2{
+width: 100%;
+height: 800px;
+display: flex;
+background: #c9f7f752;
+overflow: hidden;
+
+}
+
+#container2 .box2{
+  width: 50%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  top: 0;
+  font-size: 19px;
+  
+  margin: 70px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: capitalize;
+}
+ h3{
+  font-size: 35px;
+  margin: 20px 0px;
+  color: rgb(189, 27, 81);
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+
+}
+#container2 .box2 .btns{
+  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+
+}
+#container2 .box2 .btns .btns1{
+  display: flex;
+  width: 100%;
+  
+}
+#container2 .box2 .btns .btns2{
+  display: flex;
+  width: 100%;
+  
+}
+#container2 .box2 .btns button{
+  width: 154px;
+  height: 45px;
+  margin: 7px 26px 20px 0px;
+  border: 2px solid red;
+  border-radius: 7px;
+  text-transform: uppercase;
+  font-family:"Open Sans", sans-serif; 
+  font-size: 15px;
+  color: red;
+  font-weight: bolder;
+  
+}
+#container2 .box2 .btns button:hover{
+  background-color: red;
+  color: White;
+  font-weight: bold;
+}
+
+/* Container3 Section */
+
+#container3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:auto;
+  height: auto;
+  background: #f2eabb2b;
+  overflow: hidden;
+}
+
+#container3 .box3{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  
+}
+#container3 .box3 img{
+width: 300px;
+height: 300px;
+margin: 32px 69px;
+}
+
+#container3 .box3 img:hover{
+ 
+  cursor: pointer;
+  
+}
+
+/* Container4 Section */
+
+#container4{
+  width: auto;
+  height: auto;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+overflow: hidden;
+position: relative;
+top: 0;
+left: 0;
+/* z-index:10; */
+
+
+background-color: rgb(252, 244, 208);
+
+}
+/* #container4::before{
+  content: "";
+    position: absolute;
+    top: 0;
+  left: 0;
+  width: 100%;
+  height: 650px;
+  background: url("img15.jpg") no-repeat center center/cover;
+  z-index: 2;
+  opacity: 0.4;
+} */
+#container4 #contact{
+  margin: 19px 90px;
+}
+
+
+
+#container4 .form-group{
+  
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family:"Open Sans", sans-serif;
+   
+}
+#container4 .form-group  label{
+  display: flex;
+justify-content: flex-start;
+}
+#container4 .form-group input{
+  width: 520px;
+height: 29px;
+border: 2px solid brown;
+border-radius: 6px;
+text-transform: capitalize;
+font-size: 16px;
+font-family:"Open Sans", sans-serif; 
+
+}
+#container4 .form-group input:hover{
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+textarea{
+  width: 520px;
+  font-family:"Open Sans", sans-serif; 
+  border: 2px solid brown;
+border-radius: 6px;
+}
+textarea:hover{
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+}
+#send{
+  font-size: 15px;
+  width: 106px;
+  height: 34px;
+  color: red;
+  border: 2px solid red;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family:"Open Sans", sans-serif; 
+  margin: 30px 0px;
+}
+#send:hover{
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+}
+#blank{
+  margin: 10px 20px;
+}
+#card{
+  display: flex;
+  justify-content: center;
+
+}
+#card img{
+  height: 608px;
+width: 587px;
+}
+
+
+/* Footer Section */
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  text-transform: capitalize;
+  font-family:"Open Sans", sans-serif; 
+}
+
+
+
+
+
